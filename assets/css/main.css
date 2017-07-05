@@ -3,13 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-.about{
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-
+.intro-header{
+  position: relative;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   background-image: url("../img/fondo.jpg");
@@ -18,5 +15,14 @@
   width: 100%;
 }
 .navbar{
+  position: fixed;
   z-index: 3;
+  width: 100%;
+}
+h1{
+  color: white;
+  font-size: 70px;
+}
+h3{
+  color: white;
 }
