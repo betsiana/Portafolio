@@ -3,3 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+.about{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+.navbar{
+  z-index: 3;
+}
