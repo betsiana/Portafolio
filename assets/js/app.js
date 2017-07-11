@@ -1,24 +1,33 @@
-function scroll (event){
-  var scroll=window.pageYOffset || document.body.scrollTop;
-  console.log(scroll);
-  if(scroll<553){
-    $('#mi').addClass("active");
-  }else{
-    $('#mi').removeClass("active");
-  }
-  if(scroll>552 && scroll<1121 ){
-    $('#trabajo').addClass("active");
-    $('#mi').removeClass("active");
-  }else{
-    $('#trabajo').removeClass("active");
-  }
-  if(scroll>1120){
-    $('#contactame').addClass("active");
-    $('#trabajo').removeClass("active");
-  }else{
-    $('#contactame').removeClass("active");
-  }
-}
+$('#mi').on('click', function(){
+  $('#mi').addClass("active");
+  $('#trabajo').removeClass("active");
+  $('#contacto').removeClass("active");
+});
+$('#contacto').on('click', function(){
+  $('#contacto').addClass("active");
+  $('#trabajo').removeClass("active");
+  $('#mi').removeClass("active");
+});
+$('#trabajo').on('click', function(){
+  $('#trabajo').addClass("active");
+  $('#mi').removeClass("active");
+  $('#contacto').removeClass("active");
+});
 
 
-window.addEventListener("scroll",scroll);
+
+
+$(function(){
+     $('a[href*=#]').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+             if ($target.length) {
+                var targetOffset = $target.offset().top;
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+               return false;
+            }
+       }
+   });
+});
