@@ -4,24 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/icon/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <title>Portafolio</title>
   </head>
   <body>
-    <header>
-  		<div class="barra-menu">
-  			<a href="#" class="boton-menu">Menu</a>
-  		</div>
-  		<nav>
-  			<ul>
-  				<li><a href="#Inicio">Inicio</a></li>
-  				<li><a href="#Trabajos"></span>Trabajos</a></li>
-  				<li><a href="#Contactame"></span>Contactame</a></li>
-  			</ul>
-  		</nav>
-  	</header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Lineas que arman el menu mobile -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PORTAFOLIO</a>
+        </div>
+        <!-- Lista de la barra del menu -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="mi" ><a href="#">SOBRE MI</a></li>
+            <li id="trabajo" ><a href="#">TRABAJOS</a></li>
+            <li id="contacto" ><a href="#">CONTACTO</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="inicio">
+      <div class="foto img-circle">
+        <img src="assets/img/foto-yo.png" alt="">
+      </div>
+      <h1>BETSI LOAYZA</h1>
+      <p>FRONT END DEVELOPER</p>
+      <div class="iconos">
+        <div class=" tamano-icon github">
+          <span class="icon-github-with-circle"></span>
+        </div>
+        <div class="tamano-icon linkedin">
+          <span class="icon-linkedin-with-circle"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="assets/js/app.js" charset="utf-8"></script>
   </body>
