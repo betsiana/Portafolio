@@ -18,7 +18,7 @@ $large: 789px;
   align-items: center;
   background-image: url(../img/laptop.jpg);
   background-position: 52% 50%;
-  background-size: 600%;
+  background-size: 120%;
   color: $blanco;
   display: flex;
   flex-direction: column;
@@ -140,6 +140,24 @@ $large: 789px;
 
   img{
     width: 100%;
+  }
+}
+.color-plomo{
+  background-color: $gris-opaco;
+  color: $blanco;
+}
+.padding{
+  padding: 30px;
+}
+.flex-horizontal{
+  display: flex;
+  justify-content: space-between;
+  // width: 500px;
+}
+.iconos-contactame{
+  span{
+    color: $gris-opaco;
+    font-size: 40px;
   }
 }
 @media (min-width:789px ) {

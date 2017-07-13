@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/icon/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/icon-cerezo.png" sizes="32x32">
     <title>Portafolio</title>
   </head>
   <body>
@@ -26,18 +28,18 @@
         <!-- Lista de la barra del menu -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li id="mi" ><a href="#">SOBRE MI</a></li>
-            <li id="trabajo" ><a href="#">TRABAJOS</a></li>
-            <li id="contacto" ><a href="#">CONTACTO</a></li>
+            <li id="mi" ><a href="#inicio">SOBRE MI</a></li>
+            <li id="trabajo" ><a href="#trabajos">TRABAJOS</a></li>
+            <li id="contacto" ><a href="#contactame">CONTACTO</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="inicio">
+    <div id="inicio" class="inicio">
       <div class="foto img-circle">
         <img src="assets/img/foto-yo.png" alt="">
       </div>
-      <h1>BETSI LOAYZA</h1>
+      <h1 class="animated bounceInDown">BETSI LOAYZA</h1>
       <hr>
       <p>FRONT END DEVELOPER</p>
       <div class="iconos">
@@ -55,10 +57,11 @@
       <p>ljjhhg jbhjvyyu vyyjyfyffjyjfvuy uuyffy fyf  yfyyj j  jh hjvhjcffghj</p>
     </div>
 
-    <div class="trabajos">
+    <div id="trabajos" class="trabajos">
       <div class="titulo ">
         <h3>titulo</h3>
-        <hr>
+        <!--fadeInUp  -->
+        <hr class="animated">
       </div>
       <div class="contenido ">
         <div class="imagen column-media">
@@ -114,7 +117,26 @@
         </div>
       </div>
     </div>
-
+    <div class="informacion contactame">
+      <div class="contactame flex">
+        <div class="info-contacto">
+          <h4>CONTÁCTAME</h4>
+          <p>Si te gusto mi trabajo, mis habilidades o las tecnologias que uso,
+            te dejo mi correo y teléfono para ponernos en contaco.</p>
+            <p>Email: betsi.loayza@gmail.com</p>
+            <p>Teléfono: 997669327</p>
+        </div>
+        <div class="iconos-contactame flex-horizontal">
+          <span class="icon-linkedin-with-circle"></span>
+          <span class="icon-github-with-circle"></span>
+          <span class="icon-pinterest-with-circle"></span>
+          <span class="icon-instagram-with-circle"></span>
+        </div>
+      </div>
+    </div>
+    <footer class="flex color-plomo padding">
+      <p>Creado por Betsi Loayza</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   	<script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

@@ -8,7 +8,7 @@
   align-items: center;
   background-image: url(../img/laptop.jpg);
   background-position: 52% 50%;
-  background-size: 600%;
+  background-size: 120%;
   color: #fcfcfc;
   display: flex;
   flex-direction: column;
@@ -114,5 +114,20 @@
 
 .imagen img {
   width: 100%; }
+
+.color-plomo {
+  background-color: #484847;
+  color: #fcfcfc; }
+
+.padding {
+  padding: 30px; }
+
+.flex-horizontal {
+  display: flex;
+  justify-content: space-between; }
+
+.iconos-contactame span {
+  color: #484847;
+  font-size: 40px; }
 
 /*# sourceMappingURL=style.css.map */
