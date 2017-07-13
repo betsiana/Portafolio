@@ -6,6 +6,7 @@ $morado-suave: #bc93c9;
 $morado-ligth: #d9d0cd;
 $verde-oscuro: #0A664A;
 $verde-claro: #8abd93;
+$large: 789px;
 
 *{
   padding: 0;
@@ -75,6 +76,71 @@ $verde-claro: #8abd93;
 }
 .tamano-icon{
   font-size: 30px;
+}
+.informacion{
+  padding: 20px;
+  background-color: $morado-ligth;
+  color:$gris-opaco;
+  hr{
+    border: 2px solid $morado-oscuro;
+    margin: 0px 0px 8px 0px;
+    width: 200px;
+  }
+}
+.flex-contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4{
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  p{
+    text-align: center;
+  }
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.media-col{
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+.column-media{
+  width: 100%;
+  @media (min-width:$large ) {
+    width: 50%;
+    float: left;
+  }
+}
+.titulo{
+  padding: 0px 0px 0px 20px;
+  hr{
+    border: 2px solid $morado-oscuro;
+    margin: 0px 0px 8px 0px;
+    width: 30px;
+  }
+}
+.contenido{
+
+  @media (min-width:$large){
+  display: flex;
+  }
+}
+.descripcion{
+  background-color: $gris-opaco;
+  color:$morado-ligth;
+  padding: 20px;
+
+}
+.imagen{
+
+  img{
+    width: 100%;
+  }
 }
 @media (min-width:789px ) {
 
