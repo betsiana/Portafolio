@@ -1,61 +1,72 @@
+$gris-opaco: #484847;
+$gris-claro: #8a8384;
+$blanco: #fcfcfc;
+$morado-oscuro: #87569c;
+$morado-suave: #bc93c9;
+$morado-ligth: #d9d0cd;
+$verde-oscuro: #0A664A;
+$verde-claro: #8abd93;
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
-/*color gris: #5c707e */
-/*color rosado: #6f7980*/
 .inicio{
   align-items: center;
   background-image: url(../img/laptop.jpg);
   background-position: 52% 50%;
   background-size: 600%;
-  color: white;
+  color: $blanco;
   display: flex;
   flex-direction: column;
+  letter-spacing: 2px;
   margin-top: 50px;
   position: relative;
+  hr{
+    border: 2px solid white;
+    margin: 0px 0px 8px 0px;
+    width: 200px;
+  }
 }
-
 .foto{
-  border: 5px solid #525251;
+  border: 5px solid $morado-oscuro;
   height: 200px;
   margin-top: 70px;
   overflow: hidden;
   position: relative;
   width: 200px;
-}
-.foto img{
-  position: absolute;
-  width: 100%;
+  img{
+    position: absolute;
+    width: 100%;
+  }
 }
 .navbar-default{
-  background-color: #484847;
+  background-color: $gris-opaco;
   border-color: transparent;
   border-radius: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
-}
-.navbar-default .navbar-toggle{
-  border: 0;
-}
+  .navbar-toggle{
+    border: 0;
+    .icon-bar{
+      background-color: $morado-ligth;
+    }
+  }
 
-.navbar-default .navbar-brand{
-  color: white;
-}
-.navbar-default .navbar-toggle .icon-bar{
-  background-color: #f8edd1;
-}
-.navbar-default .navbar-nav > li > a{
- color: white;
+  .navbar-brand{
+    color: white;
+  }
+  .navbar-nav > li > a{
+   color: white;
+  }
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
  background-color: transparent;
 }
-
 .iconos{
   display: flex;
   justify-content: space-between;
@@ -65,7 +76,6 @@
 .tamano-icon{
   font-size: 30px;
 }
-
 @media (min-width:789px ) {
 
 }
