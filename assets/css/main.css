@@ -2,52 +2,109 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
-.intro-header{
-  position: relative;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../img/fondo.jpg");
-  background-size: cover;
-  height: 600px;
-  width: 100%;
-}
-.navbar{
-  color: white;
-  background-color: #5c707e;
-  border: 1px solid #6f7980;
+/*color gris: #5c707e */
+/*color rosado: #6f7980*/
+
+header nav {
+  width:80%;
+  height:100%;
+  left:-100%;
+  margin:0;
   position: fixed;
-  z-index: 3;
-  width: 100%;
 }
-.navbar-default .navbar-nav > li > a {
-  color: white;
+
+header nav ul li {
+  display:block;
+  float:none;
+  border-bottom:1px solid rgba(255,255,255, .3);
 }
-.navbar-default .navbar-brand{
-  color: white;
+
+.barra-menu {
+  display:block;
+  width:100%;
+  background:#5c707e;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #ffeedd;
+
+.barra-menu .boton-menu {
+  display:block;
+  padding:20px;
+  text-decoration:none;
 }
-h1{
-  color: white;
-  font-size: 70px;
+
+.barra-menu span {
+  float:right;
+  font-size:40px;
 }
-.content-a, .content-b{
-  margin-top: 20px;
+
+header {
+  width:100%;
 }
-h3 {
-  color: white;
+header nav {
+  background:#5c707e;
 }
-.iconos{
-  font-size: 25px;
+
+header nav ul li a {
+  color:#fff;
+  padding:20px;
+  display:block;
+  text-decoration:none;
 }
-footer{
-  background-color: #5c707e;
-  color: white;
-  margin-top: 30px;
-  text-align: center;
+
+header nav ul li span {
+  margin-right:10px;
+}
+
+header nav ul li a:hover {
+  background:#037E8C;
+}
+
+section {
+  padding:20px;
+}
+
+@media (min-width:789px ) {
+
+  header {
+    width:100%;
+  }
+  header nav {
+    height: 70px;
+    width:100%;
+    left: 0 !important;
+    background:#5c707e;
+    position: absolute;
+  }
+  .barra-menu {
+    display:none;
+  }
+
+  header nav ul {
+    overflow:hidden;
+    list-style:none;
+  }
+
+  header nav ul li {
+    float:left;
+  }
+
+  header nav ul li a {
+    color:#fff;
+    padding:20px;
+    display:block;
+    text-decoration:none;
+  }
+
+  header nav ul li span {
+    margin-right:10px;
+  }
+
+  header nav ul li a:hover {
+    background:#037E8C;
+  }
+
+  section {
+    padding:20px;
+  }
 }
