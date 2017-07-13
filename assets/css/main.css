@@ -6,105 +6,66 @@
 }
 /*color gris: #5c707e */
 /*color rosado: #6f7980*/
+.inicio{
+  align-items: center;
+  background-image: url(../img/laptop.jpg);
+  background-position: 52% 50%;
+  background-size: 600%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  position: relative;
+}
 
-header nav {
-  width:80%;
-  height:100%;
-  left:-100%;
-  margin:0;
+.foto{
+  border: 5px solid #525251;
+  height: 200px;
+  margin-top: 70px;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+}
+.foto img{
+  position: absolute;
+  width: 100%;
+}
+.navbar-default{
+  background-color: #484847;
+  border-color: transparent;
+  border-radius: 0;
   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.navbar-default .navbar-toggle{
+  border: 0;
 }
 
-header nav ul li {
-  display:block;
-  float:none;
-  border-bottom:1px solid rgba(255,255,255, .3);
+.navbar-default .navbar-brand{
+  color: white;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #f8edd1;
+}
+.navbar-default .navbar-nav > li > a{
+ color: white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+ background-color: transparent;
 }
 
-.barra-menu {
-  display:block;
-  width:100%;
-  background:#5c707e;
+.iconos{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 80px;
 }
-
-.barra-menu .boton-menu {
-  display:block;
-  padding:20px;
-  text-decoration:none;
-}
-
-.barra-menu span {
-  float:right;
-  font-size:40px;
-}
-
-header {
-  width:100%;
-}
-header nav {
-  background:#5c707e;
-}
-
-header nav ul li a {
-  color:#fff;
-  padding:20px;
-  display:block;
-  text-decoration:none;
-}
-
-header nav ul li span {
-  margin-right:10px;
-}
-
-header nav ul li a:hover {
-  background:#037E8C;
-}
-
-section {
-  padding:20px;
+.tamano-icon{
+  font-size: 30px;
 }
 
 @media (min-width:789px ) {
 
-  header {
-    width:100%;
-  }
-  header nav {
-    height: 70px;
-    width:100%;
-    left: 0 !important;
-    background:#5c707e;
-    position: absolute;
-  }
-  .barra-menu {
-    display:none;
-  }
-
-  header nav ul {
-    overflow:hidden;
-    list-style:none;
-  }
-
-  header nav ul li {
-    float:left;
-  }
-
-  header nav ul li a {
-    color:#fff;
-    padding:20px;
-    display:block;
-    text-decoration:none;
-  }
-
-  header nav ul li span {
-    margin-right:10px;
-  }
-
-  header nav ul li a:hover {
-    background:#037E8C;
-  }
-
-  section {
-    padding:20px;
-  }
 }
