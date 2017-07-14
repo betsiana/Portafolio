@@ -86,6 +86,9 @@ $large: 789px;
     margin: 0px 0px 8px 0px;
     width: 200px;
   }
+  h4{
+    text-align: center;
+  }
   @media(min-width: $large){
     display: flex;
     justify-content: center;
@@ -175,6 +178,36 @@ $large: 789px;
   span{
     color: $gris-opaco;
     font-size: 40px;
+  }
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .icon-skill{
+    height: 60px;
+    width: 60px;
+    margin: 10px 20px 30px 10px;
+    img{
+      width: 100%;
+    }
+    h4{
+      letter-spacing: 0px;
+      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      font-size: 15px;
+      @media(min-width: $large){
+        letter-spacing: 2px;
+        font-size: 20px;
+      }
+    }
+    @media(min-width: $large){
+      height: 100px;
+      width: 100px;
+      margin: 20px 20px 60px 20px;
+
+    }
   }
 }
 @media (min-width:789px ) {

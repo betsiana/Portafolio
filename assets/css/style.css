@@ -68,6 +68,8 @@
     border: 2px solid #87569c;
     margin: 0px 0px 8px 0px;
     width: 200px; }
+  .informacion h4 {
+    text-align: center; }
   @media (min-width: 789px) {
     .informacion {
       display: flex;
@@ -146,5 +148,31 @@
 .iconos-contactame span {
   color: #484847;
   font-size: 40px; }
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .skills .icon-skill {
+    height: 60px;
+    width: 60px;
+    margin: 10px 20px 30px 10px; }
+    .skills .icon-skill img {
+      width: 100%; }
+    .skills .icon-skill h4 {
+      letter-spacing: 0px;
+      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      font-size: 15px; }
+      @media (min-width: 789px) {
+        .skills .icon-skill h4 {
+          letter-spacing: 2px;
+          font-size: 20px; } }
+    @media (min-width: 789px) {
+      .skills .icon-skill {
+        height: 100px;
+        width: 100px;
+        margin: 20px 20px 60px 20px; } }
 
 /*# sourceMappingURL=style.css.map */
