@@ -55,10 +55,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  width: 80px; }
+  width: 100px; }
 
 .tamano-icon {
-  font-size: 30px; }
+  font-size: 40px; }
 
 .informacion {
   padding: 20px;
@@ -74,6 +74,32 @@
     .informacion {
       display: flex;
       justify-content: center; } }
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .skills .icon-skill {
+    height: 60px;
+    width: 60px;
+    margin: 10px 20px 30px 10px; }
+    .skills .icon-skill img {
+      width: 100%; }
+    .skills .icon-skill h4 {
+      letter-spacing: 0px;
+      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      font-size: 15px; }
+      @media (min-width: 789px) {
+        .skills .icon-skill h4 {
+          letter-spacing: 2px;
+          font-size: 20px; } }
+    @media (min-width: 789px) {
+      .skills .icon-skill {
+        height: 100px;
+        width: 100px;
+        margin: 20px 20px 60px 20px; } }
 
 .centrar-texto {
   text-align: center; }
@@ -149,30 +175,21 @@
   color: #484847;
   font-size: 40px; }
 
-.skills {
+.botones {
+  margin: 20px 40px 0px 0px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .skills .icon-skill {
-    height: 60px;
-    width: 60px;
-    margin: 10px 20px 30px 10px; }
-    .skills .icon-skill img {
-      width: 100%; }
-    .skills .icon-skill h4 {
-      letter-spacing: 0px;
-      font-weight: 600;
-      font-family: 'Open Sans', sans-serif;
-      text-align: center;
-      font-size: 15px; }
-      @media (min-width: 789px) {
-        .skills .icon-skill h4 {
-          letter-spacing: 2px;
-          font-size: 20px; } }
-    @media (min-width: 789px) {
-      .skills .icon-skill {
-        height: 100px;
-        width: 100px;
-        margin: 20px 20px 60px 20px; } }
+  width: 250px;
+  justify-content: space-between; }
+  .botones button {
+    align-items: center;
+    border: 0;
+    display: flex;
+    background-color: #bc93c9;
+    color: #484847;
+    font-weight: 600; }
+    .botones button span {
+      color: #484847;
+      font-size: 22px;
+      margin-left: 5px; }
 
 /*# sourceMappingURL=style.css.map */
