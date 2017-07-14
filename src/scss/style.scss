@@ -86,6 +86,13 @@ $large: 789px;
     margin: 0px 0px 8px 0px;
     width: 200px;
   }
+  @media(min-width: $large){
+    display: flex;
+    justify-content: center;
+  }
+}
+.centrar-texto{
+  text-align: center;
 }
 .flex-contenido{
   display: flex;
@@ -111,23 +118,33 @@ $large: 789px;
 }
 .column-media{
   width: 100%;
+
+}
+.trabajos{
   @media (min-width:$large ) {
     width: 50%;
     float: left;
+    padding: 20px;
   }
 }
 .titulo{
   padding: 0px 0px 0px 20px;
+  @media (min-width: $large){
+    padding: 0;
+  }
   hr{
     border: 2px solid $morado-oscuro;
     margin: 0px 0px 8px 0px;
     width: 30px;
   }
 }
-.contenido{
-
-  @media (min-width:$large){
-  display: flex;
+.contactame{
+  clear:both;
+  padding: 20px;
+  background-color: $morado-ligth;
+  h4{
+    font-weight: 700;
+    letter-spacing: 2px;
   }
 }
 .descripcion{
@@ -152,7 +169,7 @@ $large: 789px;
 .flex-horizontal{
   display: flex;
   justify-content: space-between;
-  // width: 500px;
+  width: 200px;
 }
 .iconos-contactame{
   span{
