@@ -86,8 +86,15 @@ $large: 789px;
     margin: 0px 0px 8px 0px;
     width: 200px;
   }
-  h4{
+  .contenido-texto{
+    margin-bottom: 30px;
+    @media(min-width: $large){
+      width: 60%;
+    }
+  }
+  h2{
     text-align: center;
+    font-weight: 600;
   }
   @media(min-width: $large){
     display: flex;

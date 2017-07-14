@@ -68,8 +68,14 @@
     border: 2px solid #87569c;
     margin: 0px 0px 8px 0px;
     width: 200px; }
-  .informacion h4 {
-    text-align: center; }
+  .informacion .contenido-texto {
+    margin-bottom: 30px; }
+    @media (min-width: 789px) {
+      .informacion .contenido-texto {
+        width: 60%; } }
+  .informacion h2 {
+    text-align: center;
+    font-weight: 600; }
   @media (min-width: 789px) {
     .informacion {
       display: flex;
