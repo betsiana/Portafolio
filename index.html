@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">PORTAFOLIO</a>
+          <a class=" navbar-brand" href="#"><span id="nombre"></span></a>
         </div>
         <!-- Lista de la barra del menu -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -60,17 +60,12 @@
         <p>Soy Betsi, egresada como Front-End Developer, Ingeniera de Sistemas y Diseño Gráfico
           Digital.
           Me encanta los resultados que puedo obtener con la programación y los
-          beneficios que puedo otorgar a las personas que usan el producto que realice.
+          beneficios que puedo otorgar a las personas que usan el producto que realicé.
           Además de codear, adoro viajar, conocer nuevos lugares y costumbres y
           la comida es uno de los placeres "no negociables" de mi lista.
         En los 6 meses intensivos que estuve en Laboratoria aprendi tecnologías
         como: javascript, Html5, css3, Jquery, frameworks de diseño y herramientas
-         de productividad como: trabajo en equipo, compromiso, responsabilidad.
-       Para mi Laboratoria a significado un crecimiento personal por que he podido
-       compartir experiencias únicas con mis compañeras que me han permitido
-       desenvolverme mejor, ser mas comunicativa, trabajar en equipo, organizarme
-        para cumplir con las tareas del proyecto. Si desea conocer al detalle mis
-        conocimientos puede visitar la sección de herramientas aprendidas y/o descargar mi CV.</p>
+         de productividad como: trabajo en equipo, compromiso y responsabilidad.</p>
       </div>
 
       <div class="contenido-skills">
@@ -123,25 +118,26 @@
           </div>
         </div>
       </div>
-
+    <div class="titulo-proyecto">
+      <h2>PROYECTOS</h2>
+      <hr>
+    </div>
     <div id="trabajos" class="trabajos">
         <div class="titulo ">
           <h3>Laboratoria News</h3>
-          <!--fadeInUp  -->
-          <hr class="animated">
+          <hr>
         </div>
         <div class="contenido ">
           <div class="imagen ">
             <img src="assets/img/labnews.png" alt="">
           </div>
           <div class="descripcion ">
-            Laboratoria news aspira a ser la primera opción y referencia editorial para los peruanos.
-            Proyecto final sprint 6. El proyecto base incluye endpoints.
-            <p>Fuentes consultadas:</p>
-            <p>/api/news obtiene todas las noticias de la portada.</p>
-            <p>jQuery: url(http://api.jquery.com/)</p>
-            <p>Sass: url(http://sass-lang.com/documentation/Sass/Script/Functions.html)</p>
-            <p>Gulp.js: url(http://gulpjs.com/)</p>
+            <p>Proyecto final Sprint 6.</p>
+            <p>La página Laboratoria News aspira a ser la primera opción y referencia
+             editorial para los peruanos.</p>
+            <p>Para la creación de esta página se uso Html5, Sass, gulp, jquery
+              y un archivo json de donde obtendremos las noticias a mostrar y
+              nombres de las fotos de la noticia.</p>
             <div class="botones">
               <a href="https://newlaboratoria.herokuapp.com/" target="_blank"><button id="btn0" class="btn btn1 btn-default" type="button">Ver demo <span class="animated glyphicon glyphicon-circle-arrow-right"></span></button></a>
               <a href="https://github.com/betsiana/Laboratoria-news" target="_blank"><button id="btn1" class="btn btn2 btn-default" type="button">Ver código <span class="animated glyphicon glyphicon-circle-arrow-right"></span></button></a>
@@ -160,14 +156,12 @@
             <img src="assets/img/yape.png" alt="">
           </div>
           <div class="descripcion column-media">
-            Yape es la nueva aplicación del Banco de Crédito del Perú, con la que
-            tendrás la libertad de usar tu dinero como quieras, ya que pagar con
-             ella es más rápido, sin pretextos y fácil. Solo con Yape podrás
-             convertir tus planes en experiencias únicas, sin números de cuenta ni token.
-            <p>Este proyecto se realizo mediante hitos, esto para poder orginar nuestro avance al día.</p>
-            <p>Fuentes consultadas:</p>
-            <p>api/registerNumber, api/resendCode, api/createUser</p>
-            <p>jQuery: url(http://api.jquery.com/)</p>
+            <p>Proyecto final Sprint 5.</p>
+            <p>La app Yape del BCP te brinda la libertad de usar tu dinero como quieras,
+              ya que pagar con ella es más rápido.</p>
+            <p>Para la creación de la replica de la app se uso Html5, jquery
+              y un json en donde se envio data y de esta manera se obtuvo codigos
+              de confirmación.</p>
 
             <div class="botones">
               <button id="btn2" class="btn btn1 btn-default" type="button">Ver demo <span class="animated glyphicon glyphicon-circle-arrow-right"></span></button>
@@ -187,12 +181,11 @@
           <img class="imagen-proyectos" src="assets/img/labcar.png" alt="">
         </div>
         <div class="descripcion column-media">
-          Se realizó un code review del: Proyecto final del Sprint4 del Bootcamp de Laboratoria
-          El proyecto se baso en hacer una página web que ofrece el servicio de taxi, dar la ubicación actual del usuario y le permite colocar de que punto a que punto se dirige, además da la tarifa.
-          En el proyecto se uso Bootstrap.
-          <p>Fuentes consultadas:</p>
-          <p>Bootstrap: url(http://getbootstrap.com/components/)</p>
-          <p>Google MapsAPI: url(https://developers.google.com/maps/?hl=es-419)</p>
+          <p>Code review de proyecto final Sprint 4.</p>
+          <p>La página web LabCar ofrece el servicio de taxi, da la ubicación
+            actual del usuario y le permite ingresar punto de salida y llegada para trazar la ruta.</p>
+          <p>Para la creación de esta pagina se uso Html5, Css3, jquery
+            y el API de googlemaps donde obtendremos el autocompletado y trazo de ruta.</p>
           <div class="botones">
             <a href="https://stephhiyagon.github.io/LabCar-CodeReview/" target="_blank"><button id="btn4" class="btn btn1 btn-default" type="button">Ver demo <span class="animated glyphicon glyphicon-circle-arrow-right"></span></button></a>
             <a href="https://github.com/StephHiyagon/LabCar-CodeReview" target="_blank"><button id="btn5" class="btn btn2 btn-default" type="button">Ver código <span class="animated glyphicon glyphicon-circle-arrow-right"></span></button></a>
@@ -211,12 +204,11 @@
           <img src="assets/img/pinterest.png" alt="">
         </div>
         <div class="descripcion column-media">
-          Proyecto grupal, que consiste en replicar el board web UI de Pinterest de Arabela.
-
-          <p>Fuentes consultadas:</p>
-          <p>jQuery: url(http://api.jquery.com/)</p>
-          <p>Sass: url(http://sass-lang.com/documentation/Sass/Script/Functions.html)</p>
-          <p>Gulp.js: url(http://gulpjs.com/)</p>
+          <p>Proyecto grupal sprint 6.</p>
+          <p>La página de Pinterest es una plataforma para compartir imágenes que
+            permite a los usuarios crear y administrar tableros personales.</p>
+          <p>Para la creación de esta replica se uso Html5, sass, jquery, gulp
+            y el API de Pinterest donde obtendremos las imagenes y datos necesarios.</p>
           <div class="botones">
             <button id="btn6" class="btn btn1 btn-default" type="button">Ver demo <span class="animated glyphicon glyphicon-circle-arrow-right"></span></button>
             <button id="btn7" class="btn btn2 btn-default" type="button">Ver código <span class="animated glyphicon glyphicon-circle-arrow-right"></span></button>
@@ -229,7 +221,7 @@
         <div class="info-contacto flex">
           <h4>CONTÁCTAME</h4>
           <p class="centrar-texto">Si te gusto mi trabajo, mis habilidades
-            o las tecnologías que uso, te dejo mi correo y teléfono para
+            o las tecnologías que uso, dejo mi correo y teléfono para
             ponernos en contacto.</p>
             <p>Email: betsi.loayza@gmail.com</p>
             <p>Teléfono: 997669327</p>

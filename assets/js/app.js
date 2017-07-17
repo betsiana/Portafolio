@@ -39,3 +39,23 @@ var grupoImagen = [1,2,3,4,5,6,7,8,9,10,11];
 $.each( grupoImagen, function( i, val ) {
   pulse($( "#icon" + i ), $('#icon'+ i+' '+'img')) ;
 });
+
+$("#trabajo").on("click", function(){
+    var posicion = $("#trabajos").offset().top;
+    $("html, body").animate({
+        scrollTop: posicion
+    }, 2000);
+});
+$("#mi").on("click", function(){
+    var posicion = $("#inicio").offset().top;
+    $("html, body").animate({
+        scrollTop: posicion
+    }, 2000);
+
+});
+$("#contacto").on("click", function(){
+    var posicion = $("#contactame").offset().top;
+    $("html, body").animate({
+        scrollTop: posicion
+    }, 2000);
+});
