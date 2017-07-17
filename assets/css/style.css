@@ -61,9 +61,13 @@
   font-size: 40px; }
   .tamano-icon a {
     text-decoration: none !important; }
+    .tamano-icon a :hover {
+      color: #87569c; }
     .tamano-icon a span {
       text-decoration: none !important;
       color: white; }
+      .tamano-icon a span :hover {
+        color: #87569c; }
   .tamano-icon :hover, .tamano-icon :active {
     text-decoration: none !important; }
 
@@ -191,7 +195,8 @@
 .iconos-contactame a, .iconos-contactame span {
   text-decoration: none !important; }
   .iconos-contactame a :hover, .iconos-contactame a :active, .iconos-contactame span :hover, .iconos-contactame span :active {
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    color: #87569c; }
 .iconos-contactame span {
   color: #484847;
   font-size: 40px; }

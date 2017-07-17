@@ -78,10 +78,15 @@ $large: 789px;
   font-size: 40px;
   a{
     text-decoration:none !important;
+    :hover{
+      color: $morado-oscuro;
+    }
     span{
       text-decoration:none !important;
-
       color: white;
+      :hover{
+        color: $morado-oscuro;
+      }
     }
   }
   :hover, :active{
@@ -235,6 +240,7 @@ $large: 789px;
     text-decoration:none !important;
     :hover, :active{
       text-decoration:none !important;
+      color: $morado-oscuro;
     }
   }
 
