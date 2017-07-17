@@ -59,8 +59,16 @@
 
 .tamano-icon {
   font-size: 40px; }
+  .tamano-icon a {
+    text-decoration: none !important; }
+    .tamano-icon a span {
+      text-decoration: none !important;
+      color: white; }
+  .tamano-icon :hover, .tamano-icon :active {
+    text-decoration: none !important; }
 
 .informacion {
+  text-align: center;
   padding: 20px;
   background-color: #d9d0cd;
   color: #484847; }
@@ -149,6 +157,9 @@
     margin: 0px 0px 8px 0px;
     width: 30px; }
 
+.contenido .imagen img {
+  border: 1px solid #8a8384; }
+
 .contactame {
   clear: both;
   padding: 20px;
@@ -177,15 +188,23 @@
   justify-content: space-between;
   width: 200px; }
 
+.iconos-contactame a, .iconos-contactame span {
+  text-decoration: none !important; }
+  .iconos-contactame a :hover, .iconos-contactame a :active, .iconos-contactame span :hover, .iconos-contactame span :active {
+    text-decoration: none !important; }
 .iconos-contactame span {
   color: #484847;
   font-size: 40px; }
+  .iconos-contactame span :hover {
+    cursor: pointer; }
 
 .botones {
   margin: 20px 40px 0px 0px;
   display: flex;
   width: 250px;
   justify-content: space-between; }
+  .botones a {
+    text-decoration: none; }
   .botones button {
     align-items: center;
     border: 0;

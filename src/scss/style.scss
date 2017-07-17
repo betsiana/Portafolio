@@ -76,8 +76,20 @@ $large: 789px;
 }
 .tamano-icon{
   font-size: 40px;
+  a{
+    text-decoration:none !important;
+    span{
+      text-decoration:none !important;
+
+      color: white;
+    }
+  }
+  :hover, :active{
+    text-decoration:none !important;
+  }
 }
 .informacion{
+  text-align: center;
   padding: 20px;
   background-color: $morado-ligth;
   color:$gris-opaco;
@@ -178,6 +190,13 @@ $large: 789px;
     width: 30px;
   }
 }
+.contenido{
+  .imagen{
+    img{
+      border: 1px solid $gris-claro;
+    }
+  }
+}
 .contactame{
   clear:both;
   padding: 20px;
@@ -212,16 +231,30 @@ $large: 789px;
   width: 200px;
 }
 .iconos-contactame{
+  a, span{
+    text-decoration:none !important;
+    :hover, :active{
+      text-decoration:none !important;
+    }
+  }
+
   span{
     color: $gris-opaco;
     font-size: 40px;
+    :hover{
+      cursor: pointer;
+    }
   }
 }
+
 .botones{
   margin: 20px 40px 0px 0px;
   display: flex;
   width: 250px;
   justify-content: space-between;
+  a{
+    text-decoration: none;
+  }
   button{
     align-items: center;
     border: 0;
